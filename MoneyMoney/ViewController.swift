@@ -17,42 +17,34 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var appNameLabel: UILabel!
     @IBOutlet weak var textField: UITextField!
-    
-    var convertedAmount:Double = 0
-    
+    @IBOutlet weak var resultLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        appNameLabel.text = "\(convertedAmount) Dollah"
-        
-        loadData()
     }
 
     @IBAction func convertButtonAction(_ sender: Any) {
-        // Double initialized by a string
-        let originalAmount = Double(textField.text ?? "") ?? 0
+        loadData()
         
-        
-        appNameLabel.text = "\(originalAmount * 0.1) RubleS"
     }
     
     func loadData() {
-        let url = URL(string: "https://api.exchangeratesapi.io/latest?base=USD&symbols=USD,GBP")!
-
-        let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
-            guard let data = data else { return }
-            
-//            print(String(data: data, encoding: .utf8)!)
-//            print(String(data: data, encoding: .utf8)!)
-//            print(String(data: data, encoding: .utf8)!)
-            let loadedObject = try? JSONDecoder().decode(ConversionRate.self, from: data) // self to referencing the type
-            //print(String(data: data, encoding: .utf8)!)
-            print(loadedObject?.base)
+        RatesClient.loadRates { [weak self] (currentRate) in
+            self?.updateUI(rate: currentRate)
+        } failure: { [weak self] in
+            self?.resultLabel.text = "Error while loading data"
         }
-
-        task.resume()
     }
     
+    func updateUI(rate currentRate: ConversionRate) {
+        let GBPConversionRate = currentRate.rates[.GBP] ?? 0
+        let originalAmount = Double(self.textField.text ?? "") ?? 0
+        let convertedAmount = originalAmount * GBPConversionRate
+        self.resultLabel.text = "\(convertedAmount) \(Currency.GBP.rawValue)"
+    }
 }
 
+
+// TODO: make it pretty - code & UI
+// TODO: round to 2 decimals
+// TODO: draw interface mockup

@@ -37,12 +37,20 @@
                                     <action selector="convertButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QL8-eq-DCG"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Hd-BR-wIV">
+                                <rect key="frame" x="219" y="230" width="123" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
                         <outlet property="appNameLabel" destination="od4-tp-LDE" id="vHm-Gv-Uzt"/>
+                        <outlet property="resultLabel" destination="5Hd-BR-wIV" id="AX4-3C-4FW"/>
                         <outlet property="textField" destination="Bl2-yx-nVi" id="jcU-mF-Tkp"/>
                     </connections>
                 </viewController>

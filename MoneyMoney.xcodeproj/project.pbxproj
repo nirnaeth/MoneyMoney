@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD74485325E946C000842CFD /* KeyedDecodingContainer+DecodingAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74485225E946C000842CFD /* KeyedDecodingContainer+DecodingAdditions.swift */; };
+		DD74485B25E9493C00842CFD /* RatesClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74485A25E9493C00842CFD /* RatesClient.swift */; };
 		DDDA27E22562AE980092FF94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDA27E12562AE980092FF94 /* AppDelegate.swift */; };
 		DDDA27E42562AE980092FF94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDA27E32562AE980092FF94 /* SceneDelegate.swift */; };
 		DDDA27E62562AE980092FF94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDA27E52562AE980092FF94 /* ViewController.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD74485225E946C000842CFD /* KeyedDecodingContainer+DecodingAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyedDecodingContainer+DecodingAdditions.swift"; sourceTree = "<group>"; };
+		DD74485A25E9493C00842CFD /* RatesClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesClient.swift; sourceTree = "<group>"; };
 		DDDA27DE2562AE980092FF94 /* MoneyMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDDA27E12562AE980092FF94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDDA27E32562AE980092FF94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 				DDDA27EC2562AE990092FF94 /* LaunchScreen.storyboard */,
 				DDDA27EF2562AE990092FF94 /* Info.plist */,
 				DDE4B8DC25B8906200804058 /* ConversionRates.swift */,
+				DD74485225E946C000842CFD /* KeyedDecodingContainer+DecodingAdditions.swift */,
+				DD74485A25E9493C00842CFD /* RatesClient.swift */,
 			);
 			path = MoneyMoney;
 			sourceTree = "<group>";
@@ -264,6 +270,8 @@
 				DDDA27E62562AE980092FF94 /* ViewController.swift in Sources */,
 				DDE4B8DD25B8906200804058 /* ConversionRates.swift in Sources */,
 				DDDA27E22562AE980092FF94 /* AppDelegate.swift in Sources */,
+				DD74485325E946C000842CFD /* KeyedDecodingContainer+DecodingAdditions.swift in Sources */,
+				DD74485B25E9493C00842CFD /* RatesClient.swift in Sources */,
 				DDDA27E42562AE980092FF94 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
