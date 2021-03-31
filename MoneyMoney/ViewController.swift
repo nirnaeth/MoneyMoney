@@ -18,9 +18,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var convertButton: UIButton!
-    @IBOutlet weak var currencyPicker: UIPickerView!
-    
-    private let currencies: [Currency] = Currency.allCases
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,11 +31,7 @@ class ViewController: UIViewController {
     @IBAction func convertButtonAction(_ sender: Any) {
         loadData()
     }
-    
-    @IBAction func selectCurrencyAction() {
-        currencyPicker.selectedRow(inComponent: 0)
-    }
-    
+        
     func loadData() {
         RatesClient.loadRates { [weak self] (currentRate) in
             self?.updateUI(rate: currentRate)
@@ -55,20 +48,5 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UIPickerViewDataSource {
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        1
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        currencies.count
-    }
-}
-
-extension ViewController: UIPickerViewDelegate {
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        currencies[row].rawValue
-    }
-}
-
-// TODO: make it pretty - code & UI
+// NEXT: make it pretty - UI Autolayout
+// TODO: read up material
