@@ -16,9 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Hd-BR-wIV">
-                                <rect key="frame" x="115" y="400" width="185" height="118"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Hd-BR-wIV">
+                                <rect key="frame" x="114.5" y="384" width="185" height="45.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="...">
                                         <attributes>
@@ -32,33 +31,57 @@
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8p-qn-pi1">
-                                <rect key="frame" x="277" y="203" width="100" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <state key="normal" title="Convert"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8p-qn-pi1">
+                                <rect key="frame" x="334" y="50" width="69" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Convert">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="convertButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QL8-eq-DCG"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bl2-yx-nVi">
-                                <rect key="frame" x="146" y="203" width="123" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bl2-yx-nVi">
+                                <rect key="frame" x="100" y="50" width="214" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Puy-BT-c7I">
-                                <rect key="frame" x="305" y="505" width="72" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Puy-BT-c7I">
+                                <rect key="frame" x="322" y="505" width="72" height="30"/>
                                 <state key="normal" title="Select"/>
                                 <connections>
                                     <segue destination="Nol-jq-aOK" kind="presentation" id="bBE-3N-LDd"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rE-ms-zi5">
+                                <rect key="frame" x="16" y="176" width="382" height="61"/>
+                                <string key="text">Very very very very very long text Very very very very very long text Very very very very very long text Very very very very very long text</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.58724714390852806" green="1" blue="0.77024247564797088" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v8p-qn-pi1" secondAttribute="trailing" constant="11" id="3eK-Qk-KFS"/>
+                            <constraint firstItem="2rE-ms-zi5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="3vg-79-lTu"/>
+                            <constraint firstItem="Bl2-yx-nVi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="4tc-cV-DLy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bl2-yx-nVi" secondAttribute="trailing" constant="100" id="6Ke-dt-rEb"/>
+                            <constraint firstItem="v8p-qn-pi1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Bl2-yx-nVi" secondAttribute="trailing" constant="8" symbolic="YES" id="99C-2p-r4S"/>
+                            <constraint firstItem="v8p-qn-pi1" firstAttribute="centerY" secondItem="Bl2-yx-nVi" secondAttribute="centerY" id="CFF-CA-KAN"/>
+                            <constraint firstItem="2rE-ms-zi5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KVl-K6-AUE"/>
+                            <constraint firstItem="Bl2-yx-nVi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Zrg-lb-cmT"/>
+                            <constraint firstItem="2rE-ms-zi5" firstAttribute="centerX" secondItem="5Hd-BR-wIV" secondAttribute="centerX" id="a2N-cY-XBc"/>
+                            <constraint firstItem="5Hd-BR-wIV" firstAttribute="width" secondItem="Bl2-yx-nVi" secondAttribute="width" multiplier="0.864486" id="cbx-kn-irK"/>
+                            <constraint firstAttribute="trailing" secondItem="2rE-ms-zi5" secondAttribute="trailing" constant="16" id="gBB-ys-5St"/>
+                            <constraint firstItem="5Hd-BR-wIV" firstAttribute="centerX" secondItem="Bl2-yx-nVi" secondAttribute="centerX" id="guz-Zl-Ur2"/>
+                            <constraint firstItem="Puy-BT-c7I" firstAttribute="centerY" secondItem="v8p-qn-pi1" secondAttribute="centerY" id="rK5-vf-opR"/>
+                            <constraint firstItem="Bl2-yx-nVi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="twE-3t-Z1J"/>
+                            <constraint firstItem="5Hd-BR-wIV" firstAttribute="top" secondItem="Bl2-yx-nVi" secondAttribute="bottom" constant="300" id="wPm-w2-bII"/>
+                            <constraint firstItem="2rE-ms-zi5" firstAttribute="top" secondItem="Bl2-yx-nVi" secondAttribute="bottom" constant="92" id="zXp-9M-M3T"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="02K-VN-B2B"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
