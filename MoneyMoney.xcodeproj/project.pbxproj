@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD6DA0AE260E07E90066A4E0 /* CurrencyPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6DA0AD260E07E90066A4E0 /* CurrencyPickerViewController.swift */; };
 		DD74485325E946C000842CFD /* KeyedDecodingContainer+DecodingAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74485225E946C000842CFD /* KeyedDecodingContainer+DecodingAdditions.swift */; };
 		DD74485B25E9493C00842CFD /* RatesClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74485A25E9493C00842CFD /* RatesClient.swift */; };
 		DDDA27E22562AE980092FF94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDA27E12562AE980092FF94 /* AppDelegate.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD6DA0AD260E07E90066A4E0 /* CurrencyPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPickerViewController.swift; sourceTree = "<group>"; };
 		DD74485225E946C000842CFD /* KeyedDecodingContainer+DecodingAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyedDecodingContainer+DecodingAdditions.swift"; sourceTree = "<group>"; };
 		DD74485A25E9493C00842CFD /* RatesClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesClient.swift; sourceTree = "<group>"; };
 		DDDA27DE2562AE980092FF94 /* MoneyMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +110,7 @@
 				DDDA27E12562AE980092FF94 /* AppDelegate.swift */,
 				DDDA27E32562AE980092FF94 /* SceneDelegate.swift */,
 				DDDA27E52562AE980092FF94 /* ViewController.swift */,
+				DD6DA0AD260E07E90066A4E0 /* CurrencyPickerViewController.swift */,
 				DDDA27E72562AE980092FF94 /* Main.storyboard */,
 				DDDA27EA2562AE990092FF94 /* Assets.xcassets */,
 				DDDA27EC2562AE990092FF94 /* LaunchScreen.storyboard */,
@@ -270,6 +273,7 @@
 				DDDA27E62562AE980092FF94 /* ViewController.swift in Sources */,
 				DDE4B8DD25B8906200804058 /* ConversionRates.swift in Sources */,
 				DDDA27E22562AE980092FF94 /* AppDelegate.swift in Sources */,
+				DD6DA0AE260E07E90066A4E0 /* CurrencyPickerViewController.swift in Sources */,
 				DD74485325E946C000842CFD /* KeyedDecodingContainer+DecodingAdditions.swift in Sources */,
 				DD74485B25E9493C00842CFD /* RatesClient.swift in Sources */,
 				DDDA27E42562AE980092FF94 /* SceneDelegate.swift in Sources */,

@@ -8,7 +8,8 @@
 import Foundation
 
 struct RatesClient {
-    static let address = "https://api.exchangeratesapi.io/latest?base=EUR&symbols=USD,GBP"
+    static let address = "http://api.currencylayer.com/live?access_key=89547ddc34e930eae39aecbc7290488d"
+//    static let address = "https://ratesapi.io//latest?base=EUR&symbols=USD,GBP"
     
     // closure
     static func loadRates(success: @escaping (ConversionRate) -> (), failure: @escaping () -> ()) {
