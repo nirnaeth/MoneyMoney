@@ -41,12 +41,10 @@ class ViewController: UIViewController {
     }
     
     func updateUI(rate currentRate: ConversionRate) {
-        let GBPConversionRate = currentRate.rates[.GBP] ?? 0
+        let GBPConversionRate = currentRate.quotes["\(currentRate.source)GBP"] ?? 0
         let originalAmount = Double(self.textField.text ?? "") ?? 0
         let convertedAmount = String(format: "%.2f", originalAmount * GBPConversionRate) // TODO: round to 2 decimals
         self.resultLabel.text = "\(convertedAmount) \(Currency.GBP.rawValue)"
     }
 }
-
-// NEXT: make it pretty - UI Autolayout
 // TODO: read up material
